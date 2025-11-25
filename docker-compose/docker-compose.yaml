@@ -43,7 +43,7 @@ services:
     depends_on:
       - rabbitmq
       - cart
-      -USER
+      - USER
   frontend:
     image: frontend:v1
     container_name: frontend
@@ -51,7 +51,7 @@ services:
       - 80:80
     depends_on:
       - catalogue
-      -USER
+      - USER
       - cart
       - shipping
       - payment
