@@ -71,7 +71,7 @@ networks:
     external: false #true if we created network manually.
 
 volumes:
-  - mongodb
-  - redis
-  - rabbitmq
-  - mysql
+  mongodb
+  redis
+  rabbitmq
+  mysql
