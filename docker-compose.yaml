@@ -1,6 +1,6 @@
 services:
   catalogue:
-    build: ./mongodb
+    build: ./catalogue
     image: prudhvimv/catalogue:v1
     container_name: catalogue
     depends_on:
