@@ -73,5 +73,5 @@ networks:
 volumes:
   mongodb
   redis
-  rabbitmq
   mysql
+  rabbitmq
