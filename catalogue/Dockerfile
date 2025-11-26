@@ -5,6 +5,7 @@ COPY server.js .
 RUN npm install
 
 FROM node:20.19.6-alpine3.22 
+RUN addgroup -S roboshop && adduser -S roboshop -G roboshop
 WORKDIR /opt/server/
 COPY --from=build --chown=roboshop:roboshop /opt/server /opt/server
 ENV MONGO=true
