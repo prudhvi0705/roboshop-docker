@@ -6,8 +6,8 @@ RUN npm install
 
 FROM node:20.19.6-alpine3.21 
 WORKDIR /opt/server/
-RUN addgroup -S roboshop && adduser -S roboshop -G roboshop \
-    chown -R roboshop:roboshop /opt/server
+RUN addgroup -S roboshop && adduser -S roboshop -G roboshop
+RUN chown -R roboshop:roboshop /opt/server
 EXPOSE 8080
 LABEL com.project="roboshop" \
       component="catalogue" \
