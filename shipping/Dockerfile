@@ -5,7 +5,7 @@ COPY src ./src
 RUN mvn clean package && \ 
     mv target/shipping-1.0.jar shipping.jar 
 
-FROM eclipse-temurin:17-jre
+FROM eclipse-temurin:17-jre-alpine
 EXPOSE 8080
 #RUN addgroup -S roboshop && adduser -S roboshop -G roboshop 
 RUN addgroup -S roboshop && adduser -S roboshop -G roboshop
