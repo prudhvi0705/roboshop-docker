@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx
-  description: nginx pod
+  namespace: roboshop
   labels:
     name: nginx
     type: learn
