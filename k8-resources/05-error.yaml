@@ -1,11 +1,7 @@
 apiVersion: v1
-kind: Pod
+kind: pod
 metadata:
   name: error-test
-labels:
-  name: error-test
-  project: devops
-  url: devops.com
 
 spec:
   containers:
