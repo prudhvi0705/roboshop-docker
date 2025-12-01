@@ -20,8 +20,8 @@ spec:
           memory: "136mi"
         env:
           - name: course
-            value: devops
+            value: "devops"
           - name: module
-            value: kubernetes
+            value: "kubernetes"
           - name: trainer
-            value: siva
+            value: "siva"
