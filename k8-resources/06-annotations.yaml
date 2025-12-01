@@ -14,10 +14,10 @@ spec:
      resources:
         requests:
           cpu: "50m"
-          memory: "68mi"
+          memory: "68Mi"
         limits:
           cpu: "100m"
-          memory: "136mi"
+          memory: "136Mi"
         env:
           - name: course
             value: "devops"
