@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotations-demo
+  annotations:
+    name: annotationsdemopod
+    url: https://pro.dev.com/build/jenkins/5/ko
+
+spec:
+  containers:
+   - name: nginx
+     image: nginx
