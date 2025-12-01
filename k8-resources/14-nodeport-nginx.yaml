@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nodeport
+  labels:
+    project: roboshop
+    course: devk8s
+    key: learn
+    purpose: nodeport
+
+spec:
+  containers:
+  - name: nginx
+    image: nginx
