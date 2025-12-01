@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ConfigMap-test
+data:
+  course: "configmap-prac"
+  duration: "120"
+  location: "bengaluru"
+  notice: "3 months"
+  severance: "hot"
