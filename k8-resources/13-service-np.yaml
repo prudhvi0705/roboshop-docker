@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nginx-nodeport
 spec:
-  type: nodeport
+  type: Nodeport
   selector:
     project: roboshop
     course: devk8s
