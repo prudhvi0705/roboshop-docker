@@ -5,7 +5,7 @@ metadata:
     name: label
   annotations:
     name: annotations
-  namespace: roboshop
+  #namespace: roboshop
 
 spec:
   containers:
