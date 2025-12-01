@@ -4,10 +4,10 @@ metadata:
   name: frontend
   namespace: roboshop
   labels:
-    - name: frontend
-      project: roboshop
-      component: ui
-      url: devops.command
+    name: frontend
+    project: roboshop
+    component: ui
+    url: devops.command
 
 spec:
   containers:
