@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: nginx-pod-svc
+  labels:
+    project: roboshop
+    course: devk8s
+    key: learn
+
+spec:
+  containers:
+    - name: nginx-pod-svc
+      image: nginx
