@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    - name: label
+  annotations:
+    - name: annotations
+  namespace: roboshop
+
+spec:
+  containers:
+    - name: nginx-pod-src
+      image: nginx
+      envFrom:
+        - configMapRef:
+            name: configmap-test
