@@ -14,11 +14,14 @@ spec:
      resources:
         requests:
           cpu: "50m"
-          mem: "68mi"
+          memory: "68mi"
         limits:
           cpu: "100m"
-          mem: "136mi"
+          memory: "136mi"
         env:
-          course: devops
-          module: kubernetes
-          trainer: siva
+          - name: course
+            value: devops
+          - name: module
+            value: kubernetes
+          - name: trainer
+            value: siva
