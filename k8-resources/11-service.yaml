@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     project: roboshop
-    course: dev-k8's
+    course: devk8s
     key: learn
   ports:
     - protocol: TCP
