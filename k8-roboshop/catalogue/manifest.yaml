@@ -34,7 +34,7 @@ spec:
       containers: 
       - name: catalogue
         image: prudhvimv/catalogue:v1
-        ImagePullPolicy: Always
+        imagePullPolicy: Always
         envFrom:
         - configMapRef:
             name: catalogue-config
