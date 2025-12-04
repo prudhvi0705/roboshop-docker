@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: emptydir
   labels:
-  project: roboshop
+    project: roboshop
 
 spec:
   containers: 
