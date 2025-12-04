@@ -15,6 +15,7 @@ spec:
       
   - name: almalinux
     image: almalinux:9
+    command: ["sleep", "10000" ]
     volumeMounts:
     - mountPath: /mnt/nginx
       name: emptydemo-vol
