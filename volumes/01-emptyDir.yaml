@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: emptydir
+  project: roboshop
+
+spec:
+  containers: 
+  name: nginx
+  image: nginx
+  volumeMounts:
+    - mountPath: /var/log/nginx
+      name: emptydemo-vol
+      
+  name: almalinux
+  image: almalinux:9
+  volumeMounts:
+    - mountPath: /mnt/nginx
+      name: emptydemo-vol
+      readOnly: true
+
+  volumes:
+  - name: emptydemo-vol
+    emptyDir:
+      sizeLimit: 100Mi
