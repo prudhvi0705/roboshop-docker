@@ -10,7 +10,7 @@ spec:
   - name: nginx
     image: nginx
     volumeMounts:
-    - mountPath: /var/log/
+    - mountPath: /var/log/nginx
       name: emptydemo-vol
       
   - name: almalinux
