@@ -38,6 +38,6 @@ spec:
     - name: test-pv
       mountPath: /usr/share/nginx/html
   volumes:
-  - name: persistent-storage
+  - name: test-pv
     persistentVolumeClaim:
       claimName: test-pv
