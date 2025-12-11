@@ -41,7 +41,6 @@ spec:
       mountPath: /usr/share/nginx/html
   nodeSelector:
     topology.kubernetes.io/zone: us-east-1f
-    accelerator:
   volumes:
   - name: nginx
     persistentVolumeClaim:
