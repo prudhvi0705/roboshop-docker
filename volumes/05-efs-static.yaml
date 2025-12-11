@@ -7,7 +7,7 @@ spec:
     storage: 5Gi # dummy, size is elastic
   volumeMode: Filesystem
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   storageClassName: "" # should be empty in static
   persistentVolumeReclaimPolicy: Retain
   csi:
@@ -20,7 +20,7 @@ metadata:
   name: efs-static
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   storageClassName: ""
   resources:
     requests:
