@@ -37,12 +37,12 @@ spec:
   - name: nginx
     image: nginx
     volumeMounts:
-    - name: test-pv
+    - name: nginx
       mountPath: /usr/share/nginx/html
-  # nodeSelector:
-  #   topology.kubernetes.io/zone: us-east-1d
+  nodeSelector:
+    topology.kubernetes.io/zone: us-east-1f
     accelerator:
   volumes:
-  - name: test-pv
+  - name: nginx
     persistentVolumeClaim:
       claimName: efs-static
